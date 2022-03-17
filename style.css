@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #ffffff, #E0FBFC, #6fa2dd ) 
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #003049;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color: #9e6240;
+    text-shadow: 1px 1px 1px #BF825F;
+}
+h2{
+
+}
+h3{
+    color: #005e90;
+}
+p{
+    text-align: justify;
+}
+
+
+
+https://coolors.co/003049-9e6240-e0fbfc-c2dfe3-4f86c6
