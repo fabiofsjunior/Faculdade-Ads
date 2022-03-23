@@ -1,9 +1,56 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-family: var(--font-padrao);
+
 }
 
+:root{
+    --cor1: #e0fbfc;
+    --cor2: #c2dfe3;
+    --cor3: #4f86c6;
+    --cor4: #003049;
+    --cor5: #bf825f;
+    --cor5: rgba(0, 0, 0, 0.525);
+
+    --font-padrao: 'Courier Prime', sans-serif; 
+    --fonte-destaque: 'Oswald';
+
+
+}
+header{
+    background-image: linear-gradient(to bottom,#ffffff, #E0FBFC, #6fa2dd ); 
+    padding: 30px;
+    max-height: 150px;
+
+}
+header > h1{
+    color: var(--cor5);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+}
+nav{
+    background-color: #003049;
+    padding: 5px;
+}
+nav > a{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 2px 10px 2px 10px;
+    border-radius: 0px 5px;
+}
+nav > a:hover{
+    background-color: #005e90;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
 body{
     background-image: linear-gradient(to right, #ffffff, #E0FBFC, #6fa2dd ) 
 }
@@ -15,19 +62,27 @@ main{
     width: 800px;
     padding: 10px;
     margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
-h1{
-    color: #9e6240;
-    text-shadow: 1px 1px 1px #BF825F;
+main > h1{
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px var(--cor5);
+    font-family: var(--fonte-destaque);
+    font-size: 1.1em;
 }
-h2{
 
-}
-h3{
-    color: #005e90;
-}
-p{
+main > p{
     text-align: justify;
+    font-family: var(--font-padrao);
+}
+footer{
+    background-color: #003049;
+    margin: auto;
+    padding: 30px;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
 }
 
 
