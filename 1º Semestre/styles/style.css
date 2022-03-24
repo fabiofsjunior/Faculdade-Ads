@@ -90,6 +90,7 @@ nav{
     background-color: var(--cor4);
     padding: 5px;
     box-shadow: 3px 3px 6px var(--cor6);
+    font-size: bold;
 }
 nav > a{
     background-color: var(--cor2);
