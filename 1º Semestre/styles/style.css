@@ -18,7 +18,7 @@
     --cor3: #4f86c6;
     --cor4: #003049;
     --cor5: #bf825f;
-    --cor5: rgba(0, 0, 0, 0.525);
+    --cor6: rgba(0, 0, 0, 0.5);
 
     --font-padrao: 'Courier Prime', sans-serif; 
     --fonte-destaque: 'Oswald';
@@ -26,19 +26,27 @@
 
 }
 header{
-    background-image: linear-gradient(to bottom,#ffffff, #E0FBFC, #6fa2dd ); 
+    background-image: linear-gradient(to bottom,#ffffff, var(--cor2), var(--cor3)); 
     padding: 30px;
     max-height: 150px;
 
 }
 header > h1{
     color: var(--cor5);
+    text-shadow: 2px 2px 0px var(--cor6);
     text-align: center;
     font-family: var(--fonte-destaque);
 }
+header > p{
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px var(--cor5);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
 nav{
-    background-color: #003049;
+    background-color: var(--cor4);
     padding: 5px;
+    box-shadow: 3px 3px 6px var(--cor6);
 }
 nav > a{
     background-color: var(--cor2);
@@ -57,6 +65,7 @@ body{
 
 main{
     background-color: white;
+    color: var(--cor4);
     border-radius: 10px;
     box-shadow: 5px 5px 15px #003049;
     width: 800px;
@@ -65,17 +74,43 @@ main{
     margin-top: 5px;
     margin-bottom: 30px;
 }
+main a{
+    color: var(--cor4);
+}
 main > h1{
-    color: var(--cor3);
-    text-shadow: 1px 1px 1px var(--cor5);
     font-family: var(--fonte-destaque);
-    font-size: 1.1em;
+    
 }
 
 main > p{
     text-align: justify;
     font-family: var(--font-padrao);
+    text-indent: 20px;
+    padding: 5px;
 }
+
+main a::after{
+    content: '\1F448'
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    content: '\1F448'
+}
+
+section > h1{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4), var(--cor1)) ;
+    border-radius: 5px 0px;
+    padding: 2px;
+}
+section > ol{
+    background-color: var(--cor1);
+    border-radius: 5px 0px;
+}
+
 footer{
     background-color: #003049;
     margin: auto;
@@ -83,6 +118,9 @@ footer{
     color: white;
     font-size: 0.5em;
     text-align: center;
+}
+footer > p{
+    color: var(--cor1);
 }
 
 
