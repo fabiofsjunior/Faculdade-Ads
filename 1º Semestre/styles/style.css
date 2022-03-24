@@ -68,7 +68,7 @@ main{
     color: var(--cor4);
     border-radius: 10px;
     box-shadow: 5px 5px 15px #003049;
-    width: 800px;
+    max-width: 800px;
     padding: 10px;
     margin: auto;
     margin-top: 5px;
