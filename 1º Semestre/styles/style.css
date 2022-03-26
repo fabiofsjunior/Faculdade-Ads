@@ -11,7 +11,6 @@
     font-family: var(--font-padrao);
 
 }
-
 :root{
     --cor1: #e0fbfc;
     --cor2: #c2dfe3;
@@ -22,7 +21,6 @@
 
     --font-padrao: 'Courier Prime', sans-serif; 
     --fonte-destaque: 'Oswald';
-
 }
     /*MENU*/
 .dp-menu ul {
@@ -68,7 +66,7 @@
 header{
     background-image: linear-gradient(to bottom,#ffffff, var(--cor2), var(--cor3)); 
     padding: 30px;
-    max-height: 150px;
+    max-height: 100px;
 }
 header > h1{
     color: var(--cor5);
@@ -110,10 +108,27 @@ body{
     width: auto;
     display: flex;
     border-radius: 5px 0px;
+    position: relative;
+}
+
+.container > h1{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 410px;
+    margin-right: auto;
+}
+.container> p{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 450px;
+    margin-right: 160px;
+
 }
 
 .item-princ{
-    border:  1px solid var(--cor4);
+    border:  3px solid var(--cor4);
     background-color: var(--cor5);    
     height: auto;
     width: 80%;
@@ -124,7 +139,7 @@ body{
     transition-duration: 0.5s;
 }
 .item-second{
-    border:  1px solid var(--cor4);
+    border:  5px solid var(--cor4);
     background-color: var(--cor5);
     height: 100%;
     width: 20%;
@@ -140,7 +155,7 @@ body{
 }
 .item:hover{
     opacity: 0.5;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 div{
     display: flex;
@@ -166,7 +181,7 @@ div > a > img{
 main{
     background-color: white;
     color: var(--cor4);
-    border-radius: 10px;
+    border-radius: 10px 0px;
     box-shadow: 5px 5px 15px #003049;
     max-width: 800px;
     padding: 10px;
@@ -208,12 +223,12 @@ section > h1{
 }
 section > ol{
     background-color: var(--cor1);
-    border-radius: 5px 0px;
+    border-radius: 2px 0px;
+    list-style-type: none;
+    padding-left: 10px;
 }
 
-section > a > p{
-    text-align: right;
- }
+
 
 footer{
     background-color: #003049;
