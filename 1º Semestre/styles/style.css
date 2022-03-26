@@ -111,20 +111,61 @@ body{
     position: relative;
 }
 
-.container > h1{
+#h-bloc-p{
     position: absolute;
     color: var(--cor4);
     background-color: var(--cor2);
-    margin-top: 410px;
+    margin-top: 46%;
     margin-right: auto;
+    max-height: 150px;
+
 }
-.container> p{
+#p-bloc-p{
     position: absolute;
     color: var(--cor4);
     background-color: var(--cor2);
-    margin-top: 450px;
-    margin-right: 160px;
-
+    margin-top: 57%;
+    margin-right: 180px;
+}
+#item1{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 18%;
+    margin-left: 80%;
+    font-size: 1em;
+}
+#item2{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 32%;
+    margin-left: 80%;
+    font-size: 1em;
+}
+#item3{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 44%;
+    margin-left: 80%;
+    font-size: 1em;
+}
+#item4{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 55%;
+    margin-left: 80%;
+    font-size: 1em;
+}
+#item5{
+    position: absolute;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    margin-top: 66.5%;
+    margin-left: 80%;
+    font-size: 1em;
 }
 
 .item-princ{
