@@ -233,23 +233,35 @@ main{
 main a{
     color: var(--cor4);
 }
-main > h1{
+main  h1{
     font-family: var(--fonte-destaque);
     
 }
+main  h2{
+    font-family: var(--fonte-destaque);
+    text-align: justify;
+}
 
-main > p{
+main p{
     text-align: justify;
     font-family: var(--font-padrao);
     text-indent: 20px;
-    padding: 5px;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 main > article a::after{
     content: '\1F448'
 }
-
+main > article > ol,ul{
+    padding-top: 20px;
+}
+main > article > ol > ol{
+    padding-bottom: 10px;
+}
+main > article > ul > li{
+    padding-bottom: 10px;
+}
 a{
     text-decoration: none;
 }
