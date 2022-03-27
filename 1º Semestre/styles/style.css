@@ -258,6 +258,20 @@ main > article > ol > ol{
 main > article > ul > li{
     padding-bottom: 10px;
 }
+main  > ul > li{
+    padding-bottom: 10px;
+}
+main > ul > li::after{
+    content: ';';
+}
+iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: calc(.5625 * 100vw);
+    max-width: 560px;
+    max-height: 315px;
+}
 a{
     text-decoration: none;
 }
