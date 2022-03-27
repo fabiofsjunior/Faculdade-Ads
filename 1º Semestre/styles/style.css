@@ -233,13 +233,9 @@ main{
 main a{
     color: var(--cor4);
 }
-main  h1{
+main  h1, h2, h3{
     font-family: var(--fonte-destaque);
     
-}
-main  h2{
-    font-family: var(--fonte-destaque);
-    text-align: justify;
 }
 
 main p{
