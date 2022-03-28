@@ -193,6 +193,7 @@ body{
     background-color: var(--cor5);
     margin-top: 0px;
     margin-bottom: 0px;
+
 }
 .item:hover{
     opacity: 0.5;
@@ -271,7 +272,72 @@ iframe{
     height: calc(.5625 * 100vw);
     max-width: 560px;
     max-height: 315px;
+    padding: 5px;
+    border: 1px solid var(--cor4);
+    border-radius: 10px 0px;
+    margin-bottom: 10px;
 }
+.quadrante{
+    display: grid;
+    margin: auto;
+    width: 60vw;
+    height: 30vh;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    grid-template-areas: "1" "2"
+                        "3" "4";
+    justify-items: center;
+    align-items: center;
+    grid-auto-columns: auto;
+}
+article{
+    padding-top: 20px;
+}
+article > section > div{
+    border: 1px solid var(--cor4);
+    border-radius: 10px 0px;
+    padding: 10px;
+}
+article > section > div > img{
+    display: none;
+}
+
+article > section > div:hover > img{
+    display: block;
+    border: 1px solid var(--cor4);
+    max-width: 200px;
+    max-height: 200px;
+    transition-duration: 1s;
+}
+
+.slide-side{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slide-side > div, div > img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px 0px;
+}
+.slide-side > div > span{
+    display: none;
+    position: relative;
+}
+.slide-side > div:hover > span{
+    display: block;
+    position: absolute;
+    font-size: large;
+    justify-items: center;
+    align-items: center;
+    font-weight: bolder;
+    text-indent: 10px;
+    word-wrap: break-word;
+}
+
 a{
     text-decoration: none;
 }
