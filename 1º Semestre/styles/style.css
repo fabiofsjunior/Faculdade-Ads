@@ -270,6 +270,8 @@ div#ft1, div#ft2, div#ft3, div#ft4, div#ft5, div#ft6{
     margin: 0px;
     background-color: #4f86c6;
     border: 1px solid black;
+    max-width: 180px;
+    max-height: 100px;
 }
 
 div#principal{
@@ -279,17 +281,29 @@ div#principal{
     border-radius: 10px 0px;
     background: var(--cor5);
     margin: 0px;
+    max-height: 508px;
 }
 
 div > a > img{
     margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
     max-width: 100%;
     max-height: 100%;
     padding: 0px;
     border-radius: 10px 0px;
-
 }
-
+div > a > img:hover{
+    margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    border-radius: 10px 0px;
+    transition-duration: 1s;
+    opacity: 0.5;
+}
 iframe{
     display: block;
     margin: auto;
