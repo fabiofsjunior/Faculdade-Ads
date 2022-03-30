@@ -101,108 +101,6 @@ body{
     background-image: linear-gradient(to right, #ffffff, #E0FBFC, #6fa2dd ) 
 }
 
-
-
-.container{
-    outline:  5px solid var(--cor4);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.466);
-    /* background-color: var(--cor5);*/
-    height: auto;
-    width: auto;
-    display: flex;
-    border-radius: 5px 0px;
-    position: relative;
-}
-
-#h-bloc-p{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 46%;
-    margin-right: auto;
-    max-height: 150px;
-
-}
-#p-bloc-p{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 57%;
-    margin-right: 180px;
-}
-#item1{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 18%;
-    margin-left: 80%;
-    font-size: 1em;
-}
-#item2{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 32%;
-    margin-left: 80%;
-    font-size: 1em;
-}
-#item3{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 44%;
-    margin-left: 80%;
-    font-size: 1em;
-}
-#item4{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 55%;
-    margin-left: 80%;
-    font-size: 1em;
-}
-#item5{
-    position: absolute;
-    color: var(--cor4);
-    background-color: var(--cor2);
-    margin-top: 66.5%;
-    margin-left: 80%;
-    font-size: 1em;
-}
-
-.item-princ{
-    border:  3px solid var(--cor4);
-    background-color: var(--cor5);    
-    height: auto;
-    width: 80%;
-    margin: 0%;
-}
-.item-princ:hover{
-    opacity: 0.5;
-    transition-duration: 0.5s;
-}
-.item-second{
-    border:  5px solid var(--cor4);
-    background-color: var(--cor5);
-    height: 100%;
-    width: 20%;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-}
-.item{
-    border:  1px solid var(--cor4);
-    background-color: var(--cor5);
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-}
-.item:hover{
-    opacity: 0.5;
-    transition-duration: 1s;
-}
-
 main{
     background-color: white;
     color: var(--cor4);
@@ -249,13 +147,13 @@ main > ul > li::after{
     content: ';';
 }
 
-.quadroMain{
+.container{
     display: grid;
     grid-template-columns: 5fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 10px 0px;
     border: 1px solid var(--cor4);
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     height: auto;
     max-height: auto;
     grid-area: "1 2"
