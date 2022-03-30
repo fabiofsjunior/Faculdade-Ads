@@ -66,7 +66,7 @@
 header{
     background-image: linear-gradient(to bottom,#ffffff, var(--cor2), var(--cor3)); 
     padding: 30px;
-    max-height: 100px;
+    max-height: 150px;
 }
 header > h1{
     color: var(--cor5);
@@ -100,26 +100,7 @@ nav > a:hover{
 body{
     background-image: linear-gradient(to right, #ffffff, #E0FBFC, #6fa2dd ) 
 }
-.quadroMain{
-    display: grid;
-    grid-template-columns: 5fr 1.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    border-radius: 10px 0px;
-    border: 5px solid var(--cor4);
-    padding: 5px;
-    background-color: #bf825f;
-    grid-gap: 1px;
-    height: 500px;
-    grid-area: "1 2"
-            "1 3"
-            "1 4"
-            "1 5"
-            "1 6";      
-}
-div#principal{
-    grid-row-start: 1;
-    grid-row-end: 6;    
-}
+
 
 
 .container{
@@ -221,26 +202,6 @@ div#principal{
     opacity: 0.5;
     transition-duration: 1s;
 }
-div{
-    display: flex;
-    max-height: auto;
-    margin-bottom: 30px;
-}
-
-div > div >div{
-    margin: auto;
-}
-div > div{
-    margin: auto;
-}
-div > a > img{
-    margin: 0px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    padding: 0px;
-}
 
 main{
     background-color: white;
@@ -287,6 +248,48 @@ main  > ul > li{
 main > ul > li::after{
     content: ';';
 }
+
+.quadroMain{
+    display: grid;
+    grid-template-columns: 5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10px 0px;
+    border: 1px solid var(--cor4);
+    background-color: var(--cor3);
+    height: auto;
+    max-height: auto;
+    grid-area: "1 2"
+            "1 3"
+            "1 4"
+            "1 5"
+            "1 6";      
+}
+div#ft1, div#ft2, div#ft3, div#ft4, div#ft5, div#ft6{
+    border-radius: 10px 0px;
+    background: var(--cor5);
+    margin: 0px;
+    background-color: #4f86c6;
+    border: 1px solid black;
+}
+
+div#principal{
+    grid-row-start: 1;
+    grid-row-end: 6; 
+    border: 1px solid var(--cor4);
+    border-radius: 10px 0px;
+    background: var(--cor5);
+    margin: 0px;
+}
+
+div > a > img{
+    margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    border-radius: 10px 0px;
+
+}
+
 iframe{
     display: block;
     margin: auto;
