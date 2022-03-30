@@ -268,9 +268,9 @@ div#ft1, div#ft2, div#ft3, div#ft4, div#ft5, div#ft6{
     border-radius: 10px 0px;
     background: var(--cor5);
     margin: 0px;
-    background-color: #4f86c6;
+    background: var(--cor3);
     border: 1px solid black;
-    max-width: 180px;
+    max-width: auto;
     max-height: 100px;
 }
 
@@ -278,20 +278,20 @@ div#principal{
     grid-row-start: 1;
     grid-row-end: 6; 
     border: 1px solid var(--cor4);
+    background: var(--cor3);
     border-radius: 10px 0px;
-    background: var(--cor5);
     margin: 0px;
-    max-height: 508px;
+    max-height: 510px;
 }
 
 div > a > img{
+    border-radius: 10px 0px;
     margin: 0px;
+    padding: 0px;
     min-height: 100%;
     min-width: 100%;
     max-width: 100%;
     max-height: 100%;
-    padding: 0px;
-    border-radius: 10px 0px;
 }
 div > a > img:hover{
     margin: 0px;
