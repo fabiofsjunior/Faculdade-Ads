@@ -4,84 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
-    <style>
-        p{text-align: justify;}
-    </style>
+    <title>Introdução a Linguagem Estruturuda em C</title>
+    <link rel="shortcut icon" href="../../imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 <body>
-<h1 style="text-align: center;">Análise e Desenvolvimento de Sistemas</h1>
-<hr>
+    <header>
+    <h1>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h1>
+    <p>Introdução a Linguagem Estruturuda em C</p>
 
-<h2><a href="c_index.html">Voltar</a></h2>
-<h2>Tipos de Dados, Expressões, Operadores e Tabela Verdade</h2>
-
-<h3>Índice</h3>
-
-<ol>
-    <li>Modulo 1</li>
-    <li>Modulo 2</li>
-</ol>
+</header>
+<!--Menu-->
+<nav class="dp-menu">
+    <ul>
+        <li><a href="#">MENU</a>
+            <ul><a href="https://fabiofsjunior.github.io/Faculdade-Ads/">Homepage</a>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+            </ul>
+        </li>
+        <li><a href="#">LINK INATIVO</a>
+            <ul><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+            </ul>
+        </li>
+        <li><a href="#">LINK INATIVO</a>
+            <ul><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+                <li><a href="#">Link Inativo</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    <main>
     
-<h3>DEFINIÇÃO</h3>
-<p>
-        Tipos de dados da linguagem C. Manipulação de variáveis e constantes, além de suas operações. Tipos de operadores (e sua precedência) e de expressões passíveis de uso. Conceito de tabela verdade na elaboração de expressões lógicas.
-</p>
-<h3>PROPÓSITO</h3>
-
-<p>Compreender os conceitos dos tipos de dados suportados pela linguagem e suas manipulações para o desenvolvimento de aplicações robustas e eficientes.</p>
+        <article>
+            <h1>Tipos de Dados, Expressões, Operadores e Tabela Verdade</h1>
+            
+            <h2>Índice</h2>
+            
+            <ol>
+                <li>Modulo 1</li>
+                <li>Modulo 2</li>
+            </ol>
+            
+            <h3>DEFINIÇÃO</h3>
+            <p>
+                    Tipos de dados da linguagem C. Manipulação de variáveis e constantes, além de suas operações. Tipos de operadores (e sua precedência) e de expressões passíveis de uso. Conceito de tabela verdade na elaboração de expressões lógicas.
+            </p>
+            <h3>PROPÓSITO</h3>
+            
+            <p>Compreender os conceitos dos tipos de dados suportados pela linguagem e suas manipulações para o desenvolvimento de aplicações robustas e eficientes.</p>
+            
+            <h3>PREPARAÇÃO</h3>
+            <p>
+                Antes de iniciar seu estudo, instale e configure em seu computador ou smartphone o ambiente de desenvolvimento Dev C++, que é obtido gratuitamente na internet. Para fazer isso, pesquise e siga as instruções indicadas por Lucas Hort no vídeo Como baixar, instalar e configurar o Dev-C++ no Windows (2019).
+            
+                Se não quiser realizar a instalação e configuração desse ambiente, você ainda pode usar a versão portátil (também disponível na internet). Basta apenas executá-la diretamente por intermédio de um pendrive.
+            </p>
+        
+            <h2>Variáveis</h2>
+            <h3>Tipos</h3>
+            <ol>
+                <li>CHAR</li>
+                    <ol type="a">
+                        <li>O tipo char representa um caractere (podendo ser uma letra, um número ou um símbolo)</li>
+                        <li>0 ao 31 - Os 32 iniciais são símbolos de controle.</li>
+                        <li>32 ao 127 - Compõem a tabela ASCII (algumas vezes, chamada de normal)</li>
+                        <li>128 ao 255 - Pertencem à tabela ASCII estendida.</li>
+                    </ol>
+                <li>INT;</li>
+                    <ol></ol>
+                <li>FLOAT;</li>
+                    <ol></ol>
+                <li>DOUBLE;</li>
+                    <ol></ol>
+                <li>VOID;</li>
+                    <ol type="a">Uma forma de identificar a ausência de valores.</ol>
+                        
+            </ol>
+        
+            <h3>Defninindo Variáveis</h3>
+            
+            <p>Para criar uma variável, utiliza-se a seguinte notação:</p>
+            <code>"TIPO NOME_DO_IDENTIFICADOR;"</code>
     
-<h3>PREPARAÇÃO</h3>
-<p>
-    Antes de iniciar seu estudo, instale e configure em seu computador ou smartphone o ambiente de desenvolvimento Dev C++, que é obtido gratuitamente na internet. Para fazer isso, pesquise e siga as instruções indicadas por Lucas Hort no vídeo Como baixar, instalar e configurar o Dev-C++ no Windows (2019).
-    
-    Se não quiser realizar a instalação e configuração desse ambiente, você ainda pode usar a versão portátil (também disponível na internet). Basta apenas executá-la diretamente por intermédio de um pendrive.
-</p>
+            <h2>Assista os vídeos a seguir:</h2>
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/v_kzxFHLyqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-<h3>Variáveis</h3>
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Q1nb0JEFuI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            
+            <div><iframe width="560" height="315" src="https://player.vimeo.com/video/417371018" frameborder="0"></iframe></div>
 
-<table>
-    <tr>
-        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/v_kzxFHLyqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Q1nb0JEFuI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      </tr>
-    <tr>
-        <td><iframe width="560" height="315" src="https://player.vimeo.com/video/417371018" frameborder="0"></iframe> </td>
-        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/2ckX4M3ocdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-    </tr>
-    <tr>
-        <td><a href="imagens/tabela_ASCI.png"><img src="imagens/tabela_ASCI.png" alt="Tabela ASCI"></a></td>
-        <td><img src="imagens/tabela_de_ocupacao.png" alt="Tabela de ocupação na memória"></td>
-    </tr>
-</table>
-
-
-
-<ol>
-    <li>CHAR</li>
-        <ol type="a">
-                <li>O tipo char representa um caractere (podendo ser uma letra, um número ou um símbolo)</li>
-                <li>0 ao 31 - Os 32 iniciais são símbolos de controle.</li>
-                <li>32 ao 127 - Compõem a tabela ASCII (algumas vezes, chamada de normal)</li>
-                <li>128 ao 255 - Pertencem à tabela ASCII estendida.</li>
-        </ol><br>
-    <li>INT;</li>
-        <ol></ol>
-    <li>FLOAT;</li>
-        <ol></ol>
-    <li>DOUBLE;</li>
-        <ol></ol>
-    <li>VOID;</li>
-        <ol>Uma forma de identificar a ausência de valores.</ol>
-</ol>
-
-
-<h3>Defninindo Variáveis</h3>
-
-<p>Para criar uma variável, utiliza-se a seguinte notação:</p>
-<code>"TIPO NOME_DO_IDENTIFICADOR;"</code>
-
-
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/2ckX4M3ocdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            
+            <h3>Tabela ASCI</h3>
+            <img class="centralizado" src="../imagens/tabela_ASCI.png" alt="Tabela ASCI">
+            <h3>Tabela de Ocupação na Memória</h3>
+            <img class="centralizado" src="../imagens/tabela_de_ocupacao.png" alt="Tabela de ocupação na memória">
+                
+            
+        
+        </article>
+    </main>
+    <footer>
+        <h1>Site desenvolvido por Fábio F S Jr.</h1>
+            <p>Copyright by Fábio F S Jr. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

@@ -120,6 +120,7 @@ main a{
 }
 main  h1, h2, h3{
     font-family: var(--fonte-destaque);
+    margin-bottom: 10px;
     
 }
 
@@ -148,6 +149,13 @@ main  > ul > li{
 }
 main > ul > li::after{
     content: ';';
+}
+.centralizado{
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    max-height: 600px;
+    margin-bottom: 10px;
 }
 
 .container{
@@ -235,6 +243,9 @@ iframe{
 article{
     padding-top: 20px;
 }
+article > ol{
+    padding-bottom: 10px;
+}
 article > section > div{
     border: 1px solid var(--cor4);
     border-radius: 10px 0px;
@@ -296,7 +307,6 @@ section > ol{
     list-style-type: none;
     padding-left: 10px;
 }
-
 
 
 footer{
