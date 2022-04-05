@@ -153,7 +153,7 @@ main > ul > li::after{
 .centralizado{
     margin: auto;
     display: block;
-    max-width: 600px;
+    max-width: 80%;
     max-height: 600px;
     margin-bottom: 10px;
 }
@@ -263,6 +263,7 @@ article > section > div:hover > img{
     max-height: 200px;
     transition-duration: 1s;
 }
+
 
 .slide-side{
     display: flex; 
