@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    font-family: var(--font-padrao);
+
+}
+:root{
+    --cor1: #e0fbfc;
+    --cor2: #c2dfe3;
+    --cor3: #4f86c6;
+    --cor4: #003049;
+    --cor5: #bf825f;
+    --cor6: rgba(0, 0, 0, 0.5);
+
+    --font-padrao: 'Courier Prime', sans-serif; 
+    --fonte-destaque: 'Oswald';
+}
+   
+header{
+    background-image: linear-gradient(to bottom,#ffffff, var(--cor2), var(--cor3)); 
+    padding: 30px;
+    max-height: 150px;
+}
+header > h1{
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px var(--cor1);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+}
+header > p{
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px var(--cor1);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+nav{
+    background-color: var(--cor4);
+    padding: 5px;
+   /* box-shadow: 3px 3px 6px var(--cor6);*/
+    box-shadow: inset 1px 2px 5px white;
+    font-size: bold;
+}
+nav > a{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 2px 10px 2px 10px;
+    border-radius: 0px 5px;
+}
+nav > a:hover{
+    background-color: #005e90;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+ /*MENU*/
+ .dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.dp-menu ul {
+    background-color: var(--cor4);
+    padding-left: 5vw;
+}
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a {
+    color: var(--cor2);
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px;
+    transition-duration: .5s;
+    border-radius: 5px 0px;
+}
+.dp-menu ul li a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+    /*SUB MENU*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.dp-menu ul li:hover ul {
+    display: block;
+}
+.dp-menu ul ul {
+    width: 130px;
+    border-radius: 5px 0px;
+    padding: 2px;
+}
+.dp-menu ul ul li a {
+    display: block;
+}
+body{
+    background-image: linear-gradient(to right, #ffffff, #E0FBFC, #6fa2dd ) 
+}
+
+main{
+    background-color: white;
+    color: var(--cor4);
+    border-radius: 10px 0px;
+    box-shadow: 5px 5px 15px #003049;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+main a{
+    color: var(--cor4);
+}
+main  h1, h2, h3{
+    font-family: var(--fonte-destaque);
+    margin-top: 10px;
+    
+}
+
+main p{
+    text-align: justify;
+    font-family: var(--font-padrao);
+    text-indent: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main > article a::after{
+    content: '\1F448'
+}
+main > article > ol,ul{
+    padding-top: 20px;
+}
+main > article > ol > ol{
+    padding-bottom: 10px;
+}
+main > article > ul > li{
+    padding-bottom: 10px;
+}
+main  > ul > li{
+    padding-bottom: 10px;
+}
+main > ul > li::after{
+    content: ';';
+}
+.centralizado{
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 600px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10px 0px;
+    border: 0px solid var(--cor4);
+    background-color: white;
+    height: auto;
+    max-height: auto;
+    grid-area: "1 2"
+            "1 3"
+            "1 4"
+            "1 5"
+            "1 6";      
+}
+div#ft1, div#ft2, div#ft3, div#ft4, div#ft5, div#ft6{
+    border-radius: 10px 0px;
+    background: var(--cor5);
+    margin: 0px;
+    background: var(--cor3);
+    border: 1px solid black;
+    max-width: auto;
+    max-height: 100px;
+}
+
+div#principal{
+    grid-row-start: 1;
+    grid-row-end: 6; 
+    border: 1px solid var(--cor4);
+    background: var(--cor3);
+    border-radius: 10px 0px;
+    margin: 0px;
+    max-height: 510px;
+}
+
+div > a > img{
+    border-radius: 10px 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    
+}
+div > a > img:hover{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px 0px;
+    transition-duration: 1s;
+    opacity: 0.5;
+}
+iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: calc(.5625 * 100vw);
+    max-width: 560px;
+    max-height: 315px;
+    padding: 5px;
+    border: 1px solid var(--cor4);
+    border-radius: 10px 0px;
+    margin-bottom: 10px;
+}
+.quadrante{
+    display: grid;
+    margin: auto;
+    width: 60vw;
+    height: 30vh;
+    max-width: 100%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    grid-template-areas: "1" "2"
+                        "3" "4";
+    justify-items: center;
+    align-items: center;
+    grid-auto-columns: auto;
+}
+article{
+    padding-top: 20px;
+}
+article > ol{
+    padding-bottom: 10px;
+}
+article > section > div{
+    border: 1px solid var(--cor4);
+    border-radius: 10px 0px;
+    padding: 10px;
+}
+article > section > div > img{
+    display: none;
+}
+
+article > section > div:hover > img{
+    display: block;
+    border: 1px solid var(--cor4);
+    max-width: 200px;
+    max-height: 200px;
+    transition-duration: 1s;
+}
+
+
+.slide-side{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slide-side > div, div > img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px 0px;
+}
+.slide-side > div > span{
+    display: none;
+    position: relative;
+}
+.slide-side > div:hover > span{
+    display: block;
+    position: absolute;
+    font-size: large;
+    justify-items: center;
+    align-items: center;
+    font-weight: bolder;
+    text-indent: 10px;
+    word-wrap: break-word;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section > h1{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4), var(--cor1)) ;
+    border-radius: 5px 0px;
+    padding: 2px;
+}
+section > ol{
+    background-color: var(--cor1);
+    border-radius: 2px 0px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+footer{
+    background-color: #003049;
+    margin: auto;
+    padding: 30px;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+}
+footer > p{
+    color: var(--cor1);
+}
+
+
+

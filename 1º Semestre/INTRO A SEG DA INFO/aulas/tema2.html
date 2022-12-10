@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2</title>
+    <style>
+        p{text-align: justify;
+        }
+        img.displayed{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table.comBordasSimples
+        td {border: 1px solid black;
+        }        
+                
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Introdução a Segurança da Informação</h1>
+    <hr>
+    <a href="tema1.html"><h3>Voltar</h3></a>
+
+    <h1>Modulo 2</h1>
+
+    <h2>Segurança Lógica x Segurança Física</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lPO-D28Wk9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Segurança Física</h2>
+
+    <p>A família de normas ABNT ISO/IEC 27.000 divide a segurança física em dois aspectos: um é relacionado aos equipamentos e outro, ao ambiente.</p>
+
+    <h2>Segurança Lógica</h2>
+
+    <p>Em adição às medidas de segurança física, há as de segurança lógica , que correspondem às medidas baseadas em software.</p>
+    <p>Dessa lista, podemos destacar as senhas, as listas de controle de acesso, a criptografia, e o firewall.</p>
+
+    <p>A criptografia corresponde ao conjunto de técnicas que permite o embaralhamento de dados por intermédio do uso de chaves e de algoritmos computacionais baseados em funções matemáticas. Essas funções propiciam, em linhas gerais, a presença de duas grandes classes de algoritmos: os simétricos e os assimétricos.</p>
+
+    <h3>Criptografia Simétrica:</h3>
+
+        <ol>
+            <li><a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar">Cifra de César</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Blowfish">Blowfish</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Twofish">Twofish</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Advanced_Encryption_Standard">Rijnadel</a></li>
+        </ol>
+
+        <img class="displayed" src="imagens/chaves_criptografia.png" alt="">
+
+        <h2>Criptografia assimétrica</h2>
+
+        <p>Caracteriza-se por algoritmos que normalmente envolvem técnicas matemáticas mais sofisticadas, como a fatoração de números grandes e o logaritmo discreto.</p>
+        <p>Esta família emprega duas chaves: uma é utilizada para cifrar; a outra, para decifrar. Essas chaves são conhecidas como:</p>
+
+        <div>
+            <table class="comBordasSimples">
+                <tr>
+                    <td>Chave Pública</td>
+                    <td> + </td>
+                    <td>Chave Privada</td>
+                </tr>
+            </table>
+        </div>
+    <p>Com a combinação dessas duas chaves, é possível assegurar não somente a confidencialidade, mas também o não repúdio ou irretratabilidade. Afinal, pode-se combinar o uso desse controle tanto com a chave privada do emissor (não repúdio) quanto com a pública do destinatário (confidencialidade):</p>
+    <ol>
+        <li><a href="https://pt.wikipedia.org/wiki/Troca_de_chaves_de_Diffie%E2%80%93Hellman">Diffie-Hellman</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/El_Gamal">El Gamal</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Criptografia_de_curva_el%C3%ADptica">Curvas Elípticas</a></li>
+    </ol>
+    <p>Quanto aos controles aplicados às redes, destacam-se os <abbr title="Equipamentos que filtram o tráfego de rede relacionado à troca de dados entre clientes e servidores.">firewalls</abbr>, os sistemas detectores de intrusão e os VPNs</p>
+
+    <h3>DMZ</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EdEuDc5l8YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>PODCAST</h3>
+    <audio src="midia/podcast.mp3" controls></audio>
+
+    <h3>Versão para Impressão da aula</h3>
+    <a href="https://stecine.azureedge.net/repositorio/principios_da_seguranca_e_o_ciclo_de_vida_da_informacao/index.html#imprimir">Link Externo</a>
+
+    
+</body>
+</html>
